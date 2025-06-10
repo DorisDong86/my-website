@@ -1,0 +1,15 @@
+.block{
+    /* 长方形，宽高为视口的5% */
+    width: 100px;
+    height: 40px;
+    /* 内容水平、垂直居中，字体白色 */
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    font-weight: bold;
+    /* 字体勾黑色边 */
+    text-shadow: 0 0 3px #000000;
+    position: relative;
+    /* 加边框 */
+    border: 1px solid #5f5f5f;
+}

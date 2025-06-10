@@ -1,0 +1,106 @@
+
+.App {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url("./public/grid.svg");
+      background-size: 120px 120px;
+      background-position: 0 0;
+      background-repeat: repeat;
+  }
+  
+  .content {
+    padding: 60px 20px 20px 20px;
+    flex-grow: 1;
+  }
+  
+  /* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  line-height: 1;
+  font-family: inherit;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+/* Remove default margins and paddings */
+h1, h2, h3, h4, h5, h6, p, pre, form, fieldset, legend {
+  margin: 0;
+  padding: 0;
+}
+
+/* Ensure consistent box model */
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "iconfont"; /* Project id  */
+  src: url("./public/iconfont.ttf") format("truetype");
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-mailbox:before {
+  content: "\e629";
+}
+
+.icon-github-fill:before {
+  content: "\e885";
+}

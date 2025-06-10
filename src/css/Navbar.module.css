@@ -1,0 +1,38 @@
+.navbarNav {
+  padding: 1rem;
+  /* 添加淡灰色底部边框,带阴影效果 */
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+  z-index: 2;
+  border-radius: 10px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  height: 60px;
+  /* 文字上下居中 */
+}
+
+.navItem{
+  /* 文字上下居中 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+/* 链接样式 */  
+.navLink {
+  color: #2E8B57;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.navLink:hover {
+  /* // 鼠标悬停时文字颜色变为橙色 */
+  color: #FF8C00;
+}
