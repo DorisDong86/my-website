@@ -131,15 +131,77 @@ const Profile = () => {
             projectName="GE Employee Management System"
             role="Full Stack Developer"
             skills="JavaScript, HTML, CSS, Java, Oracle"
-            projectDescription="Developed and maintained modules for GE's internal employee management portal, focusing on HR processes and data management."
+            projectDescription={
+              <div style={{fontSize:"1rem"}}>
+                <h3 style={{ marginBottom: "30px" }}>GE Employee Website</h3>
+                <div style={{ marginBottom: "10px" }}>
+                  Developed and maintained modules for GE's internal employee
+                  management portal, focusing on HR processes and data
+                  management.
+                </div>
+                <ul style={{ listStyleType: "disc" }}>
+                  <li style={{ marginBottom: "10px" }}>
+                    Received a client commendation letter for delivering
+                    high-quality solutions that fully met their requirements.
+                  </li>
+                  <li style={{ marginBottom: "10px" }}>
+                    Worked closely with clients to translate requirements into
+                    technical solutions, improving user experience and
+                    operational efficiency.
+                  </li>
+                  <li style={{ marginBottom: "10px" }}>
+                    Collaborated with project teams to ensure high-quality
+                    deliverables.
+                  </li>
+                  <li style={{ marginBottom: "10px" }}>
+                    Maintained system stability through rigorous code reviews
+                    and testing.
+                  </li>
+                </ul>
+              </div>
+            }
           />
           <ExperienceCard
             companyName="WOYO.com"
             period="2010 - 2011"
             projectName="e-Commerce Website"
-            role="Java Engineer"
-            skills="Java, MogoDB, Oracle"
-            projectDescription="Developed front-end interfaces and Java-based back-end APIs for an e-commerce platform.Ensured stable deployment and smooth operation of the project."
+            role="Web Developer"
+            skills="JQuery, Javascript, HTML, CSS, Java, MogoDB, Oracle"
+            projectDescription={
+              <div style={{fontSize:"1rem"}}>
+                <h3 style={{ marginBottom: "30px" }}>
+                  WOYO e-Commerce Website
+                </h3>
+                <div>
+                  <div style={{ marginBottom: "10px" }}>
+                    Developed front-end interfaces and Java-based back-end APIs
+                    for an e-commerce platform.Ensured stable deployment and
+                    smooth operation of the project.
+                  </div>
+                  <ul style={{ listStyleType: "disc" }}>
+                    <li style={{ marginBottom: "10px" }}>
+                      Partnered with colleagues to achieve a successful project
+                      go-live.
+                    </li>
+                    <li style={{ marginBottom: "10px" }}>
+                      Built responsive frontend interfaces using jQuery, JS,
+                      HTML and CSS, optimized backend APIs with Java, MogoDB to
+                      ensure high performance.
+                    </li>
+                    <li style={{ marginBottom: "10px" }}>
+                      Collaborated with teams to align frontend and backend
+                      workflows, enhancing user experience.Conducted code
+                      refactoring to improve system maintainability and
+                      security.
+                    </li>
+                    <li style={{ marginBottom: "10px" }}>
+                      Customized modules for BTC community features and
+                      e-commerce requirements.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            }
           />
           <ExperienceCard
             companyName="Citi Bank"
@@ -147,29 +209,55 @@ const Profile = () => {
             role="Full Stack Developer"
             skills="JavaScript, CSS, HTML, Dojo, Java, Oracle"
             projectDescription={
-              <div>
+              <div style={{fontSize:"1rem"}}>
                 <h3 style={{ marginBottom: "30px" }}>
                   Account Opening System for Citi Bank
                 </h3>
                 <div>
-                  <div  style={{marginBottom:'10px'}}>
-                    Contributed to the development of a streamlined digital
-                    account opening system for 10+ countries, enhancing user
-                    experience and reducing processing time.
+                  <div style={{ marginBottom: "10px" }}>
+                    Developed a global Account Opening System enabling Citibank
+                    customers to open accounts one-stop,supporting over 20
+                    countries.This system consolidated previously disparate
+                    product-specific systems, allowing users to select multiple
+                    products in a single session, significantly saving user
+                    time.
                   </div>
-                  <ul style={{ listStyleType: "disc"}}>
-                    <li style={{marginBottom:'10px'}}>
-                      Designed and implemented a global account opening system
-                      for Citibank clients across 10+ countries, streamlining
-                      secure and efficient account processing.
+                  <ul style={{ listStyleType: "disc" }}>
+                    <li style={{ marginBottom: "10px" }}>
+                      Implemented front-end UI components and interaction logic
+                      for the account opening system using JavaScript, Dojo,
+                      HTML, and CSS, focusing extensively on user experience
+                      (UX) to deliver user-friendly interfaces.
                     </li>
-                    <li style={{marginBottom:'10px'}}>
-                      Coordinated with cross-functional teams to integrate
-                      interfaces and ensure data security.
+                    <li style={{ marginBottom: "10px" }}>
+                      Participated in feasibility discussions for new
+                      requirements, conducted comprehensive impact analysis on
+                      the overall product, and designed databases and APIs to
+                      implement new functionalities.
                     </li>
-                    <li style={{marginBottom:'10px'}}>
-                      Developed customized solutions for international clients,
-                      improving system adaptability and user satisfaction.
+                    <li style={{ marginBottom: "10px" }}>
+                      Independently developed and maintained the Form module
+                      using Java. This critical module demonstrated high
+                      operational stability and was continuously optimized based
+                      on client feedback, resulting in the solution being highly
+                      commended by users.
+                    </li>
+                    <li style={{ marginBottom: "10px" }}>
+                      Independently developed and maintained the AO Form module.
+                      This critical module demonstrated high operational
+                      stability and was continuously optimized based on client
+                      feedback, resulting in the solution being highly commended
+                      by users.
+                    </li>
+                    <li style={{ marginBottom: "10px" }}>
+                      Collaborated effectively with colleagues from diverse
+                      product departments and across different countries to
+                      troubleshoot and resolve issues.
+                    </li>
+                    <li style={{ marginBottom: "10px" }}>
+                      Participated in quarterly production releases,
+                      demonstrating agility in rapidly diagnosing and resolving
+                      incidents encountered during deployments.
                     </li>
                   </ul>
                 </div>
