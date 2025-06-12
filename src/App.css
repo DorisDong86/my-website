@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-image: url("./public/grid.svg");
+   
       background-size: 120px 120px;
       background-position: 0 0;
       background-repeat: repeat;
@@ -22,14 +22,16 @@
   box-sizing: border-box;
 }
 
-html, body {
-  height: 100%;
+html {
   margin: 0;
   padding: 0;
+  border:0;
   scroll-behavior: smooth;
+  background-image: url("./public/grid.svg");
 }
 
 body {
+  height: 100%;
   line-height: 1;
   font-family: inherit;
 }
