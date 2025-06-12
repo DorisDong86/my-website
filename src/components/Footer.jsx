@@ -52,11 +52,11 @@ const Footer = () => {
       <div style={imagesContainerStyles}>
         {/* github 官网 */}
 
-        {[...Array(28)].map((_, i) => (
+        {[...Array(18)].map((_, i) => (
           <RotatingSunflower
-            type={i % 4}
+            type={3}
             key={`sf2-${i}`}
-            height={36}
+            height={50}
             rotateOnloading={false}
           />
         ))}
