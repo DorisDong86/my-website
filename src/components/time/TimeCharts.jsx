@@ -1,6 +1,6 @@
 import React from "react";
 import { Bar } from "@ant-design/plots";
-import { Pie } from '@ant-design/plots';
+import { Pie } from "@ant-design/plots";
 import { useSelector } from "react-redux";
 
 function TimeCharts() {
@@ -24,8 +24,8 @@ function TimeCharts() {
   }
   // 柱状图
   const dayBarConfig = {
-    width: 400,
-    height: 200,
+    width: 500,
+    height: 300,
     data: dataToshow,
     xField: "type",
     yField: "value",
@@ -36,7 +36,7 @@ function TimeCharts() {
       style: {
         fontSize: 12,
         fontWeight: 600,
-        opacity: 0.6
+        opacity: 0.6,
       },
     },
     scale: {
@@ -47,30 +47,38 @@ function TimeCharts() {
   };
   // 饼图
   const dayPieConfig = {
-    width: 350,
-    height: 250,
+    width: 500,
+    height: 300,
     data: dataToshow,
-    angleField: 'value',
-    colorField: 'type',
+    angleField: "value",
+    colorField: "type",
     radius: 0.8,
     label: {
-      text: (d) => `${d.type}\n ${d.value}h`,
-      position: 'spider',
+      text: (d) => `${d.type} ${d.value}h`,
+      position: "spider",
     },
     legend: false,
     scale: {
-        color: {
-          range: colorList,
-        },
+      color: {
+        range: colorList,
       },
-  }
+    },
+  };
   return (
     <div>
-      <h3>Charts:</h3>
-        <div style={{ marginTop:"10px",backgroundColor: "white", display:"flex",borderRadius:"5px",boxShadow:"rgba(0, 0, 0, 0.1) 0px 0px 10px" }}>
-          <Bar {...dayBarConfig} />
-          <Pie {...dayPieConfig} />
-        </div>
+      <h2>Charts:</h2>
+      <div
+        style={{
+          margin: "10px auto",
+          backgroundColor: "white",
+          display: "flex",
+          borderRadius: "5px",
+          boxShadow: "rgba(0, 0, 0, 0.1) 0px 0px 10px",
+        }}
+      >
+        <Bar {...dayBarConfig} />
+        <Pie {...dayPieConfig} />
+      </div>
     </div>
   );
 }

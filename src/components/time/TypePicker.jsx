@@ -11,7 +11,7 @@ const TypePicker = React.memo(() => {
   }
   return (
     <div className={styles.TypePickerContainer} style={{ display: "flex" }}>
-      <h3>Event Type:</h3>
+      <h2>Event Type:</h2>
       {typeList.map((type, index) => {
         return (
           <div

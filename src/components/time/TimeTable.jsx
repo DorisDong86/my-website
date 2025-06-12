@@ -21,7 +21,7 @@ function TimeTable() {
     return typeList.filter((type) => type.id === id)[0];
   }
   return (
-    <div style={{ display: "flex", flexDirection: "column", height:"500px", flexWrap: "wrap" }}>
+    <div style={{ display: "flex", flexDirection: "column", height:"600px", flexWrap: "wrap", marginBottom:'30px' }}>
       {timeBlockList}
     </div>
   );

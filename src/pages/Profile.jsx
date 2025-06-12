@@ -8,7 +8,7 @@ const Profile = () => {
     padding: "20px",
     fontFamily: "Arial, sans-serif",
     color: "#333",
-    maxWidth: "1000px",
+    maxWidth: "1200px",
     margin: "0 auto",
   };
 
@@ -22,17 +22,17 @@ const Profile = () => {
 
   const introTextStyles = {
     flexBasis: "50%",
-    paddingLeft: "100px",
+    paddingLeft: "140px",
   };
 
   const helloIAmStyles = {
-    fontSize: "20px",
+    fontSize: "25px",
     color: "#555",
     marginBottom: "5px",
   };
 
   const nameStyles = {
-    fontSize: "80px",
+    fontSize: "90px",
     color: "#2E8B57", // SeaGreen, similar to the image's green
     fontStyle: "italic",
     margin: "0 0 10px 0",
@@ -40,23 +40,23 @@ const Profile = () => {
   };
 
   const iAmAStyles = {
-    fontSize: "18px",
+    fontSize: "22px",
     color: "#555",
     marginBottom: "5px",
   };
 
   const roleStyles = {
-    fontSize: "24px",
+    fontSize: "30px",
     fontWeight: "bold",
     color: "#000",
     margin: "5px 0",
   };
 
   const sectionTitleStyles = {
-    fontSize: "22px",
+    fontSize: "28px",
     color: "#777",
     textAlign: "left",
-    marginBottom: "20px",
+    marginBottom: "25px",
     fontWeight: "normal",
   };
 
@@ -97,8 +97,8 @@ const Profile = () => {
     xField: "type",
     yField: "value",
     colorField: "type",
-    width: 850,
-    height: 280,
+    width: 950,
+    height: 340,
     scale: {
       color: {
         range: ["#2E8B57", "#FF8C00", "#F8CC4D", "#83452D", "#F2F930"],
@@ -110,7 +110,7 @@ const Profile = () => {
       {/* Intro Section */}
 
       <div style={introSectionStyles}>
-        <RotatingSunflower height={320} rotateOnloading={true} type={3} />
+        <RotatingSunflower height={380} rotateOnloading={true} type={3} />
         <div style={introTextStyles}>
           <p style={helloIAmStyles}>Hello! I am</p>
           <h1 style={nameStyles}>Doris</h1>
@@ -118,7 +118,7 @@ const Profile = () => {
           <p style={roleStyles}>Web Developer</p>
           <p style={roleStyles}>Full Stack Engineer</p>
         </div>
-        <RotatingSunflower height={320} rotateOnloading={true} type={1} />
+        <RotatingSunflower height={380} rotateOnloading={true} type={1} />
       </div>
 
       {/* My Working Experience Section */}

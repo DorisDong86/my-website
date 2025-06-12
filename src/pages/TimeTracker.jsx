@@ -23,7 +23,7 @@ const TimeTracker = () => {
   return (
     <div className={styles.TimeTrackerContainer}>
       <div className={styles.dateSetter}>
-        <h3>Set Date:</h3>
+        <h2>Select Date:</h2>
         <input type="date" value={date} onChange={clickHanle} />
       </div>
       <TypePicker />
